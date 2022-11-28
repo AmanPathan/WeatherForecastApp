@@ -1,0 +1,124 @@
+h1 {
+  text-align: center;
+  color: #000;
+}
+h2 {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: rgba(16, 37, 46, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(16, 37, 46, 0.3);
+  min-height: 400px;
+  height: 450px;
+  width: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #101010;
+  margin: 20px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+}
+.card-title1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #20006a;
+  text-transform: capitalize;
+}
+.card-content {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+}
+.inputData {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+}
+#label {
+  font-size: 20px;
+  font-weight: 700;
+}
+input[type="search"]{
+    cursor: pointer;
+}
+.inputField {
+  font-size: 20px;
+  background: transparent;
+  outline: none;
+  width: 240px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  padding: 5px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.image {
+  width: 40%;
+  height: 40%;
+  padding: 0;
+}
+@media (max-width:375px){
+  .card-content {
+  font-size: 15px;
+  }
+  .card-title {
+  font-size: 26px;
+  } 
+}
+@media (max-width:425px) {
+  .card {
+    height: 300px;
+    width: 320px;
+  }
+  .card-content {
+    font-size: 17px;
+    }
+    .card-title {
+    font-size: 22px;
+    } 
+    .image{
+      width: 50%;
+      height: 40%;
+    }
+}
+@media (max-width:320px) {
+  .card-content {
+    font-size: 20px;
+    width: 150px;
+    margin: 0;
+    margin-left: 20px;
+    align-items: center;
+    }
+    span{
+      display: none;
+    }
+    .inputField{
+      font-size: 18px;
+    }
+}
